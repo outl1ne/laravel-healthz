@@ -1,0 +1,34 @@
+{
+  "name": "optimistdigital/laravel-healthz",
+  "description": "Health check route for Laravel application.",
+  "keywords": [
+    "laravel",
+    "healthcheck",
+    "healthz",
+    "optimistdigital"
+  ],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "^6.0 || ^7.0 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OptimistDigital\\LaravelHealthz\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OptimistDigital\\LaravelHealthz\\ServiceProvider"
+      ],
+      "aliases": {
+        "Healthz": "OptimistDigital\\LaravelHealthz\\Facade"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
